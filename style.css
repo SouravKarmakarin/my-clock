@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;1,300;1,400&display=swap');
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    border: 3px dotted black;
+    border-radius: 50%;
+    height: 40vw;
+    width: 40vw;
+    background: url("img/clock.png") no-repeat;
+    background-size: 100%;
+}
+
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour {
+    width: 1.5%;
+    height: 28%;
+    top: 21%;
+    left: 50%;
+    opacity: 0.8;
+    margin-bottom: -29%;
+}
+
+#minute {
+    width: 1%;
+    height: 34%;
+    top: 15%;
+    left: 50%;
+    opacity: 0.7;
+}
+
+#second {
+    width: 0.6%;
+    height: 43%;
+    top: 39%;
+    left: 49.65%;
+    opacity: 0.6;
+    margin-top: -33%;
+}
+
+#center {
+    position: absolute;
+    top: 46.5%;
+    left: 48%;
+    height: 5%;
+    width: 5%;
+    border-radius: 50%;
+    background: black;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer h4 {
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.icons .fa {
+    color: #f44336;
+    font-size: 20px;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    position: relative;
+    bottom: 20px;
+}
+
+.footer p {
+    font-size: 15px;
+    position: relative;
+    bottom: 35px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.footer p .fa {
+    color: #f44336;
+}
+
+.nav {
+    display: flex;
+    position: absolute;
+}
+
+.nav .fa {
+    color: #f44336;
+    font-size: 50px;
+}
+
+.nav h5 {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Exo 2', sans-serif;
+    bottom: 24px;
+    left: 10px;
+}
+
+@media(max-width:700px) {
+    .nav h5 {
+        font-size: 10px;
+        position: relative;
+        bottom: 9px;
+        left: 5px;
+    }
+    .nav .fa {
+        color: #f44336;
+        font-size: 30px;
+    }
+    .footer h4 {
+        font-size: 15px;
+    }
+    .icons .fa {
+        font-size: 13px;
+    }
+}
